@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-size: 20px;
 }
 
 html {
@@ -31,7 +32,7 @@ ul {
   justify-content: center;
   align-items: center;
   list-style: none;
-  height: 8%;
+  height: 10%;
 }
 li {
   background-color: black;
@@ -43,6 +44,10 @@ li {
   margin: 1rem;
   padding: 1rem;
   text-align: center;
+  cursor: pointer;
+}
+li:hover {
+  transform: scale(1.1);
 }
 
 .footer {
@@ -50,11 +55,20 @@ li {
 }
 
 .content {
+  flex-flow: column nowrap;
+  justify-content: flex-start;
   width: 40%;
-  height: 80%;
-  min-width: 600px;
-  min-height: 800px;
+  height: 70%;
+  min-width: 400px;
+  min-height: 600px;
+  padding: 2rem;
   margin: auto;
   border-radius: 15%;
   overflow: auto;
+}
+.content>* {
+  margin: 2rem;
+}
+.content>div {
+  margin-top: auto;
 }
